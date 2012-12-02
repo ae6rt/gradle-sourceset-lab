@@ -19,6 +19,7 @@ test {
     testLogging.showStandardStreams = true
 }
 
+// You can run a single test in this custom task using 'gradle clean intTest -DintTest.single=LongIntegrationTest'
 task intTest(type: Test) {
     testClassesDir = sourceSets.intTest.output.classesDir
     classpath = sourceSets.intTest.runtimeClasspath
